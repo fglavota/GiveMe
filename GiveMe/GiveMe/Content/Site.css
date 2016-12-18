@@ -50,3 +50,22 @@ textarea {
     min-width:100%;
 }
 
+#PowerBi {
+
+   box-sizing: border-box;
+   width: 100%; 
+   height: 500px;
+}
+
+.button-placeholder {
+  
+    display: table;
+    margin: 0 auto;
+}
+
+.row {
+    margin-top:100px;
+}
+
+
+
