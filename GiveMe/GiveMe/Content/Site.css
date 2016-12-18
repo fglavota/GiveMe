@@ -22,3 +22,15 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar-brand {
+    
+   
+}
+
+.icon-bar {
+
+    background-image: url("Images/image001.jpg");
+    background-size: contain;
+}
+
