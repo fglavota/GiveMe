@@ -18,24 +18,31 @@ namespace GiveMe.Migrations
 
         protected override void Seed(GiveMe.Models.ApplicationDbContext context)
         {
-            if (!context.Roles.Any(r => r.Name == "Administrator"))
+            var roleName = "Administrator";
+            if (!context.Roles.Any(r => r.Name == roleName))
             {
                 var store = new RoleStore<IdentityRole>(context);
                 var manager = new RoleManager<IdentityRole>(store);
-                var role = new IdentityRole { Name = "Administrator" };
+                var role = new IdentityRole { Name = roleName};
 
                 manager.Create(role);
             }
 
-            if (!context.Users.Any(u => u.UserName == "TestUser"))
+            var email = "test2@example.com";
+            if (!context.Users.Any(u => u.Email == email))
             {
                 var store = new UserStore<ApplicationUser>(context);
                 var manager = new UserManager<ApplicationUser>(store);
-                var user = new ApplicationUser { UserName = "TestUser" };
-
-                manager.Create(user, "TestPassword");
+                var user = new ApplicationUser
+                {
+                    UserName = email,
+                    Email = email
+                };
+                manager.Create(user, "TestPassword123@");
                 manager.AddToRole(user.Id, "Administrator");
             }
+
+            context.SaveChanges();
         }
     }
 }
