@@ -15,5 +15,9 @@ namespace GiveMe.Controllers
         {
             return View();
         }
+        public ActionResult AddUser()
+        {
+            return View();
+        }
     }
 }
