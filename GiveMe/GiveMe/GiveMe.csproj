@@ -178,6 +178,10 @@
     <Compile Include="Migrations\201612181148344_Initial migration.Designer.cs">
       <DependentUpon>201612181148344_Initial migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612181310162_Add BloodRecords table.cs" />
+    <Compile Include="Migrations\201612181310162_Add BloodRecords table.Designer.cs">
+      <DependentUpon>201612181310162_Add BloodRecords table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\BloodRecord.cs" />
@@ -260,6 +264,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201612181148344_Initial migration.resx">
       <DependentUpon>201612181148344_Initial migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612181310162_Add BloodRecords table.resx">
+      <DependentUpon>201612181310162_Add BloodRecords table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

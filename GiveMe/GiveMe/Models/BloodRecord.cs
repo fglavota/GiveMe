@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -28,6 +29,7 @@ namespace GiveMe.Models
     }
     public sealed class TotalDosages
     {
+        public int Id { get; set; }
         [Required]
         public BloodGroup BloodGroup { get; set; }
         [Required]
@@ -42,6 +44,7 @@ namespace GiveMe.Models
 
     public sealed class BloodRecord
     {
+        public int Id { get; set; }      
         [Required]
         public DateTimeOffset Date { get; set; }
         [Required]
