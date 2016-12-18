@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace GiveMe.Controllers
 {
+    [Authorize(Roles="Administrator")]
     public class AdminController : Controller
     {
         // GET: Admin
