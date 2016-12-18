@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using GiveMe.Models;
+using GiveMe.ViewModels;
 
 namespace GiveMe.Controllers
 {
