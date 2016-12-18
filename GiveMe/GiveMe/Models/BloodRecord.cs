@@ -22,8 +22,8 @@ namespace GiveMe.Models
 
     public enum ProductType
     {
-        Erythrocytes,
-        Thrombocytes
+        BloodDonation,
+        //TODO: PlasmaDonation...
 
     }
     public sealed class TotalDosages
@@ -35,7 +35,9 @@ namespace GiveMe.Models
         [Required]
         public ProductType ProductType { get; set; }
         [Required]
-        public int Count { get; set; }
+        public int TakenCount { get; set; }
+        [Required]
+        public int ProducedCount { get; set; }
     }
 
     public sealed class BloodRecord
