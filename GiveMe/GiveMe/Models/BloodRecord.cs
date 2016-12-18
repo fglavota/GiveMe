@@ -21,6 +21,12 @@ namespace GiveMe.Models
         Negative
     }
 
+    public sealed class BloodGroupType
+    {
+        public BloodGroup BloodGroup { get; set; }
+        public BloodType BloodType { get; set; }
+    }
+
     public enum ProductType
     {
         BloodDonation,

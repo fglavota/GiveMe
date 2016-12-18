@@ -6,6 +6,8 @@ namespace GiveMe.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<BloodRecord> BloodRecords { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
